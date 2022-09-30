@@ -37,6 +37,12 @@ yarn-error.log
 testem.log
 /typings
 
-# System files
+# System Files
 .DS_Store
 Thumbs.db
+
+# Mac OSX Finder files.
+**/.DS_Store
+.DS_Store
+
+.DS_Store
