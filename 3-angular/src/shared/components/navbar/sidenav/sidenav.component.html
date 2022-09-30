@@ -1,0 +1,45 @@
+<main>
+  <section fxLayoutAlign="space-between center">
+    <app-logo [color]="'black'"></app-logo>
+    <button mat-icon-button (click)="this.closeSidenav.emit()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </section>
+
+  <nav class="mt-5">
+    <ul fxLayout="column" fxLayoutGap="10px">
+      <li
+        fxLayoutAlign="space-between center"
+        class="open-tree-button"
+        [ngClass]="{ 'link-tree-open': productLinkTreeOpen }"
+        (click)="toggleTree()"
+      >
+        <span>Product</span>
+        <mat-icon [ngClass]="{ 'rotate-icon': productLinkTreeOpen }"
+          >arrow_forward_ios</mat-icon
+        >
+      </li>
+      <app-sidenav-tree-links
+        *ngIf="productLinkTreeOpen"
+      ></app-sidenav-tree-links>
+
+      <li>
+        <a target="_blank">Solutions</a>
+      </li>
+      <li>
+        <a target="_blank">Enterprise</a>
+      </li>
+      <li>
+        <a target="_blank">Resources</a>
+      </li>
+      <li>
+        <a target="_blank">Pricing</a>
+      </li>
+      <li>
+        <a target="_blank">Sign in</a>
+      </li>
+    </ul>
+  </nav>
+</main>
+
+<app-sidenav-bottom-buttons></app-sidenav-bottom-buttons>

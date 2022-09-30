@@ -1,0 +1,49 @@
+main {
+  overflow: auto;
+  max-height: 66rem;
+  padding: 2rem 2.5rem;
+}
+
+app-logo {
+  transform: scale(1.2);
+}
+
+ul {
+  padding-top: 3rem;
+
+  li {
+    padding: 1rem;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+a:hover {
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 1px solid black;
+  transition: 0.1s;
+}
+
+.open-tree-button {
+  cursor: pointer;
+  margin-right: 0.7rem;
+
+  mat-icon {
+    transition: 0.2s;
+  }
+
+  .rotate-icon {
+    transform: rotate(90deg);
+  }
+}
+
+.link-tree-open {
+  background-color: #f5f4f5;
+  border-radius: 6px;
+}

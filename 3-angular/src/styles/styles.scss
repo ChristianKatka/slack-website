@@ -1,0 +1,10 @@
+@use "./" as *;
+html,
+body {
+  background-color: var(--slack-purple);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  // overflow-x: hidden;
+}
