@@ -6,4 +6,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent {
   @Output() sidenavToggle = new EventEmitter<void>();
+  @Output() openSearchBar = new EventEmitter<void>();
 }

@@ -16,3 +16,22 @@ mat-sidenav {
 mat-sidenav-content {
   background-color: var(--slack-purple);
 }
+
+app-navbar-search {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  height: 0px;
+  width: 100%;
+  z-index: 999;
+  // transition-duration: 3s;
+  // transition: transform 1s;
+  transition: 1s;
+  // transform: translateY(100%);
+
+}
+.search-bar-open {
+  height: 80px;
+  // transform: translateY(-10%);
+  background-color: green;
+}

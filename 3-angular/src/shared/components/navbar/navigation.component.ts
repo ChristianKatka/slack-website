@@ -5,4 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: 'navigation.component.html',
   styleUrls: ['navigation.component.scss'],
 })
-export class NavigationComponent {}
+export class NavigationComponent {
+  showSearchBar = false;
+
+  openSearchBar() {
+    console.log('open');
+    
+    this.showSearchBar = true;
+  }
+  closeSearchBar() {
+    this.showSearchBar = false;
+  }
+}

@@ -1,13 +1,17 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav role="navigation" position="end">
-    <app-sidenav
-      (closeSidenav)="sidenav.close()"
-    ></app-sidenav>
+    <app-sidenav (closeSidenav)="sidenav.close()"></app-sidenav>
   </mat-sidenav>
   <mat-sidenav-content>
     <app-navbar
       (sidenavToggle)="sidenav.toggle()"
+      (openSearchBar)="openSearchBar()"
     ></app-navbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<app-navbar-search
+  *ngIf="showSearchBar"
+  [ngClass]="{ 'search-bar-open': showSearchBar }"
+></app-navbar-search>

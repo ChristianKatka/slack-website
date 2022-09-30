@@ -2,6 +2,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
 import { LogoComponent } from './components/logo/logo.component';
 import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 import { NavigationComponent } from './components/navbar/navigation.component';
+import { NavbarSearchComponent } from './components/navbar/search/search.component';
 import { SidenavBottomButtonsComponent } from './components/navbar/sidenav/bottom-buttons/bottom-buttons.component';
 import { SidenavComponent } from './components/navbar/sidenav/sidenav.component';
 import { SideNavTreeLinksComponent } from './components/navbar/sidenav/tree-links/tree-links.component';
@@ -17,6 +18,7 @@ export const components: any[] = [
   LogoComponent,
   SideNavTreeLinksComponent,
   SidenavBottomButtonsComponent,
+  NavbarSearchComponent
 ];
 
 export const pipes: any[] = [BooleanPipe];
