@@ -12,6 +12,6 @@
 </mat-sidenav-container>
 
 <app-navbar-search
-  *ngIf="showSearchBar"
   [ngClass]="{ 'search-bar-open': showSearchBar }"
+  (closeSearchBar)="closeSearchBar()"
 ></app-navbar-search>

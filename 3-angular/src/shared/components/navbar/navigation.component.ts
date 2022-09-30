@@ -9,8 +9,6 @@ export class NavigationComponent {
   showSearchBar = false;
 
   openSearchBar() {
-    console.log('open');
-    
     this.showSearchBar = true;
   }
   closeSearchBar() {

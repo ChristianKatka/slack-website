@@ -1,3 +1,37 @@
-<main>
-    <h1>search</h1>
+<main fxLayoutAlign="center center">
+  <button mat-icon-button>
+    <mat-icon>search</mat-icon>
+  </button>
+
+  <section class="mat-elevation-z1">
+    <div fxLayoutAlign="center center" style="padding: 0.5rem">
+      <form [formGroup]="form">
+        <input
+          formControlName="search"
+          type="text"
+          name="query"
+          value=""
+          placeholder="Search slack.com"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+          (input)="onSearchUserTyping()"
+          (focus)="focus()"
+          (blur)="onfocusout()"
+        />
+      </form>
+
+      <button mat-icon-button (click)="onCloseSearchBar()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <ul *ngIf="showAutoCompleteTextList" fxLayout="column" fxLayoutGap="10px">
+      <li>What is Slack Connect</li>
+      <li>Lorem ipsum dolor, sit amet consectetur</li>
+      <li>Lorem ipsum dolor, sit amet consectetur</li>
+      <li>Lorem ipsum dolor, sit amet consectetur</li>
+      <li>Lorem ipsum dolor, sit amet consectetur</li>
+    </ul>
+  </section>
 </main>
